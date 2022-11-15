@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#010122, #000222, #030128,#05002d, #080030, #0b0037, #140046,#17014f, #260164,#310377);
+}
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    margin-left:40px ;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+    font-family:'Poppins', sans-serif ;
+    border-radius: 20px;
+}
+
+header  ul li a:hover , header ul li a.active {
+    background-color: white ;
+    color: rgb(9, 9, 120);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+
+section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+}
+
+section img#stars {
+    left: -100px;
+}
+
+section img#moon {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: screen;
+    left: 166px;
+    top: 116px;
+}
+
+section img#shoot {
+    width: 100px;
+    height: auto;
+    mix-blend-mode: screen;
+    left: 0;
+    top: 116px;
+}
+
+section img#ship {
+    width: 330px;
+    height: auto;
+    bottom: 50px;
+    mix-blend-mode: screen;
+    left: 130px;
+    z-index: 1;
+}
+
+.sec {
+    padding: 100px;
+    color: white;
+    position: relative;
+}
+
+.sec::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #0022, #010122, #417bba, #2391c4);
+}

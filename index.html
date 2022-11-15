@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mặt Trăng</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./img/15Z_2102.w026.n002.163B.p1.163.eps">
+</head>
+<body>
+    <header>   
+        <h1>LOGO</h1>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </header>
+    <section>
+        <img src="./moon.png" id="moon">
+        <img src="./stars.png" id="stars">
+        <img src="./ships.png" id="ship">
+        <img src="./Town.png" id="build">
+        <img src="./shooting star.png" id="shoot">
+    </section>
+    <div class="sec">
+        <marquee>Hôm nay ngày 11/15/2022</marquee>
+        
+        <p>Tối 15/11/2022 trời âm u mây nhiều hơn nắng có mưa tí mưa vào buổi sáng , đồ chưa khô -_-</p>
+        <!-- <p>Lại hôm nay buổi sáng thức dậy lúc 6h lão toàn đi học lúc 7h kém nên dậy luôn rồi làm ít đường quyền cho bứt mồ hôi rồi đi tắm ,xong rồi ăn sáng nghe soundcloud ..đến tầm 9h kém mới mò vô học -_- không sao vẫn làm xong bài thực hành, đến trưa nấu cơm cho lão toàn rồi ngủ luôn không ăn trưa , hồi sáng đớp hơi nhiều cơm , đến chiều 1h30 thì đi lên công ty , chỉnh logo cho web occop rồi làm ít phần mềm bảo tàng ..,đến chiều đi về 2 thằng rang cơm nhiều topping ăn , lão toàn thì làm sự kiện còn mình thì ngồi code dại dại tiện thể học luôn , sắp hết ngày rồi đó :D</p> -->
+    </div>
+    <script>
+        let stars = document.querySelector("#stars");
+        let moon = document.querySelector("#moon");
+        let ship = document.querySelector("#ship");
+        let shoot = document.querySelector("#shoot");
+
+
+        window.addEventListener('scroll',  function(){
+            let value = window.scrollY;
+            stars.style.left = -100 + value * 0.09 + "px";
+            stars.style.top = -value * 0.01 + "px";
+            ship.style.left = (130 - value*0.4) +"px";
+            shoot.style.left = value *  1.5 + "px";
+        })
+    </script>
+</body>
+</html>
